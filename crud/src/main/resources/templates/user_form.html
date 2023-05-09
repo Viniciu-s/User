@@ -9,7 +9,9 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="text-center"><h2>[[${title}]]</h2></div>
+        <div class="text-center">
+            <h2>[[${title}]]</h2>
+        </div>
 
         <form th:action="@{/user/save}" method="post" th:object="${user}" 
             style="max-width: 500px; margin: 0 auto;">
