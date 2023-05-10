@@ -50,7 +50,7 @@ public class UserController {
         // Salva o usuário no UserService
         service.save(user);
         // Adiciona uma mensagem flash de sucesso ao RedirectAttributes
-        ra.addFlashAttribute("message", "Usuário cadastrado com sucesso");
+        ra.addFlashAttribute("message", "Usuário salvo com sucesso");
         // Redireciona para a página "/user"
         return "redirect:/user";
     }
