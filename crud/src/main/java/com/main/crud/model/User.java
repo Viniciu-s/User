@@ -8,20 +8,15 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-// Indica que esta classe representa uma entidade no banco de dados
 @Entity
 
-// Define a tabela que será mapeada para essa entidade
 @Table(name = "tab_user")
 public class User {
-     // Define a chave primária da tabela
      @Id
 
-     // Define a estratégia de geração de valores para a chave primária
      @GeneratedValue(strategy =  GenerationType.IDENTITY)
      private Integer id;
  
-     // Define as colunas da tabela mapeadas para os atributos da classe
      @Column(length = 50, nullable = false, name = "firstname")
      private String firstname;
      
@@ -36,7 +31,6 @@ public class User {
  
      private boolean enabled;
  
-     // Métodos de acesso para os atributos
      public Integer getId() {
          return id;
      }
@@ -85,7 +79,6 @@ public class User {
          this.enabled = enabled;
      }
  
-     // Sobrescreve o método toString() para exibir informações úteis do objeto
      @Override
      public String toString() {
          return "User [id=" + id + ", firstname=" + firstname + ", lastname=" + lastname 
