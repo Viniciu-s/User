@@ -3,6 +3,6 @@
 
 Agora execute os seguintes comandos para baixar as imagens:
 * docker pull mysql
-* docker pull vieiraenabled/user
+* docker pull vieiraenabled/user:1.0
 * Depois de baixar as imagens execute o comando: docker compose up
 * A aplicação irá rodar na porta 8080, então entre em http://localhost:8080/.
